@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Event</title>
+    
+</head>
+<body>
+  
+
+   <div class="conatiner">
+     <div class="class">
+    <h1>hey my name is dhrub vij</h1>
+     </div>
+   </div>
+   <button id ="btn">click me i am a dhrub vij </button>
+
+
+</body>
+
+ 
+<script>
+  let button = document.getElementById("btn")
+button.addEventListener("keydown", () =>{
+    document.querySelector(".class").innerHTML="yayy u are clciked"
+})
+ 
+
+// button.addEventListener("contextmenu", () =>{
+//    alert("dont have right click")
+// })
+</script>
+</html>

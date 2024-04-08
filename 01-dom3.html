@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121; color: blanchedalmond;" >
+    <ul class="language">
+
+        <li>javascript</li>
+        
+    </ul>
+    
+</body>
+<script>
+    function addlanguage(langname){
+        const li=document.createElement('li');
+        // li.innerHTML =`${langname}`
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.language').
+        appendChild(li)
+
+    }
+    addlanguage("ruby")
+
+
+    //edit
+    const secondli= document.querySelector("li:nth-child(2)")
+    const li = document.createElement('li')
+    li.textContent="mojo"
+    secondli.replaceWith(li)
+    
+
+        //   const secondli =document.querySelector("li:nth -child")
+        //   const li = document.createElement('li')
+        //   li.textContent
+    
+</script>
+</html>
